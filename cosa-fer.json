@@ -1,0 +1,30 @@
+{
+    "data": "redacted",
+    "errors": [
+        {
+            "extensions": {
+                "code": "INTERNAL_SERVER_ERROR",
+                "exception": {
+                    "name": "TimeoutError",
+                    "stacktrace": [
+                        "TimeoutError: db-default pool: ResourceRequest timed out",
+                        "    at ResourceRequest._fireTimeout (\/opt\/cc-ss-chat-service\/node_modules\/generic-pool\/lib\/ResourceRequest.js:62:17)",
+                        "    at Timeout.bound (\/opt\/cc-ss-chat-service\/node_modules\/generic-pool\/lib\/ResourceRequest.js:8:15)",
+                        "    at listOnTimeout (node:internal\/timers:559:17)",
+                        "    at processTimers (node:internal\/timers:502:7)"
+                    ]
+                }
+            },
+            "locations": [
+                {
+                    "column": 72,
+                    "line": 1
+                }
+            ],
+            "message": "db-default pool: ResourceRequest timed out",
+            "path": [
+                "channels"
+            ]
+        }
+    ]
+}
